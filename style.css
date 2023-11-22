@@ -1,0 +1,36 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.body {
+  padding: 20px;
+  background-color: blanchedalmond;
+}
+
+.name-of-the__game {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: burlywood;
+  font-size: 100px;
+}
+
+#field {
+  display: grid;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  height: 50px;
+  width: 50px;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
