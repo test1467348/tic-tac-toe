@@ -18,11 +18,10 @@ for(let a = 0; a <= 2; a++) {
 let allCells = document.querySelectorAll('.cell'); // Создаем массив который содержит все ячейки
 
 allCells.forEach((cell) => cell.addEventListener('click', (event) => {
-  turnCount++;
-  
-  sign = turnCount % 2 == 0 ? 'X' : '0';
-
   if (!event.target.innerText.length) { // Проверяем есть ли в ячейке какой нибудь символ
+    turnCount++;
+  
+    sign = turnCount % 2 == 0 ? 'X' : '0';
     event.target.innerText = sign;
   }
 }));
